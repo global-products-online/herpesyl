@@ -21,6 +21,20 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        @keyframes fa-blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 0; }
+ }
+
+        .fa-blink {
+            -webkit-animation: fa-blink .99s linear infinite;
+            -moz-animation: fa-blink .99s linear infinite;
+            -ms-animation: fa-blink .99s linear infinite;
+            -o-animation: fa-blink .99s linear infinite;
+            animation: fa-blink .99s linear infinite;
+        }
+
         .img-bottle img {
             height: 15em;
             width: auto;
@@ -45,11 +59,12 @@
         }
 
         .btn-header {
-            background: rgb(25, 135, 84);
+            background: gold;
             border-radius: 2px;
             border: 1px solid yellow;
-            color: yellow;
-            padding: 2px 20px 2px 20px;
+            padding: 5px;
+            font-size: 10px;
+            color: white;
         }
 
         .btn-header:hover {
@@ -110,15 +125,15 @@
         crossorigin="anonymous"></script>
 
 
-    <nav class="header-offer fixed-top bg-success">
+    <nav class="header-offer fixed-top bg-danger">
         <div class="d-flex justify-content-center">
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <span class="text-light header-text">BUY 6 BOTTLES AND SAVE $300</span>
-                <span id="header-minutes" class="text-light header-time"></span>
+                <span id="header-minutes" class="text-light header-tim fa-blink"></span>
             </div>
             <div class="header-btn">
-                <a href="https://mwebclassic.com/6340/4822/34/?subid=btnoffer">
-                    <button type="button" class="btn-header">Act Now</button>
+                <a href="https://mwebclassic.com/6340/4822/34/?subid=btnoffer#ctaTranscript">
+                    <button type="button" class="btn-header">GET MY DISCOUNT</button>
                 </a>
             </div>
         </div>
@@ -172,7 +187,7 @@
                     </div>
                     <div class="row mt-5">
                         <div class="d-grid gap-2 col-lg-7 mx-auto">
-                            <a href="https://mwebclassic.com/6340/4822/34/?subid=btn2">
+                            <a href="https://mwebclassic.com/6340/4822/34/?subid=btn2#ctaTranscript">
                                 <button class="btn btn-lg btn-danger" type="button">ACCESS OFFICIAL WEBSITE</button>
                             </a>
                         </div>
@@ -241,7 +256,7 @@
                     run and completely change your life.
                 </p>
                 <div class="d-grid gap-2 col-lg-7 mx-auto mt-5">
-                    <a href="https://mwebclassic.com/6340/4822/34/?subid=btn1">
+                    <a href="https://mwebclassic.com/6340/4822/34/?subid=btn1#ctaTranscript">
                         <button class="btn btn-lg btn-danger" type="button">ACCESS OFFICIAL WEBSITE</button>
                     </a>
                 </div>
@@ -305,7 +320,7 @@
             <div class="row mt-5">
                 <div class="col-12">
                     <div class="d-grid gap-2 col-lg-7 mx-auto text-center">
-                        <a href="https://mwebclassic.com/6340/4822/34/?subid=discount">
+                        <a href="https://mwebclassic.com/6340/4822/34/?subid=discount#ctaTranscript">
                             <button class="btn btn-lg btn-warning" type="button">GET MY DISCOUNT RIGHT NOW!</button>
                         </a>
                     </div>
