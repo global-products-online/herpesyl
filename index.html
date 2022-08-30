@@ -29,12 +29,20 @@
         .header-background-color {
             background-color: var(--primary-color);
         }
-        
+
         @keyframes fa-blink {
-            0% { opacity: 1; }
-            50% { opacity: 0.5; }
-            100% { opacity: 0; }
- }
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
 
         .fa-blink {
             -webkit-animation: fa-blink .99s linear infinite;
@@ -114,6 +122,20 @@
             list-style: none;
         }
 
+        .made-logo img {
+            width: 100px;
+            position: absolute;
+            bottom: 200px;
+        }
+
+        @media only screen and (min-width: 992px) {
+            .made-logo img {
+                width: 100px;
+                position: absolute;
+                left: 240px;
+                top: 400px;
+            }
+        }
         /* Extra small devices (phones, 600px and down) */
         /* Extra large devices (large laptops and desktops, 1200px and up) */
         @media only screen and (min-width: 1200px) {
@@ -125,17 +147,24 @@
             .fda-icons img {
                 width: 40em;
             }
+
+            .made-logo img {
+                width: 150px;
+                position: absolute;
+                left: 400px;
+                top: 600px;
+            }
         }
     </style>
     <script>
-        window.nudgify = {data: {"product":{"stock":null,"image":null,"id":null}}};
-        (function(w){
-            var k="nudgify",n=w[k]||(w[k]={});
-            n.uuid="b48ff553-0ce3-458b-899a-8de387d21ba3";
-            var d=document,s=d.createElement("script");
-            s.src="https://pixel.nudgify.com/pixel.js";
-            s.async=1;
-            s.charset="utf-8";
+        window.nudgify = { data: { "product": { "stock": null, "image": null, "id": null } } };
+        (function (w) {
+            var k = "nudgify", n = w[k] || (w[k] = {});
+            n.uuid = "b48ff553-0ce3-458b-899a-8de387d21ba3";
+            var d = document, s = d.createElement("script");
+            s.src = "https://pixel.nudgify.com/pixel.js";
+            s.async = 1;
+            s.charset = "utf-8";
             d.getElementsByTagName("head")[0].appendChild(s)
         })(window)
     </script>
@@ -195,6 +224,9 @@
             <div class="col img-bottle">
                 <img src="./bottle.png" class="img-responsive" alt="Herpesyl Bottle">
             </div>
+            <div class="made-logo">
+                <img src="./usa.png" alt="made in the usa">
+            </div>
             <div class="col my-auto">
                 <div class="container">
                     <div class="row mt-5">
@@ -214,7 +246,8 @@
                     <div class="row mt-5">
                         <div class="d-grid gap-2 col-lg-7 mx-auto">
                             <a href="https://mwebclassic.com/6340/4822/34/?subid=btn2#ctaTranscript">
-                                <button class="btn btn-lg btn-primary-color" type="button">ACCESS OFFICIAL WEBSITE</button>
+                                <button class="btn btn-lg btn-primary-color" type="button">ACCESS OFFICIAL
+                                    WEBSITE</button>
                             </a>
                         </div>
                     </div>
